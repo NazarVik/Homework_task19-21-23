@@ -3,6 +3,16 @@
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
+void CubeTable(int n)
+{
+    Console.Write(n + " -> ");
+    for(int i = 1; i <= n; i++) Console.Write(Math.Pow(i, 3) + ", ");
+    Console.WriteLine();
 
+}
 
-Console.WriteLine("Hello, World!");
+Console.Clear();
+Console.Write("введите число  = ");
+int number  = int.Parse(Console.ReadLine());
+
+CubeTable(number);
